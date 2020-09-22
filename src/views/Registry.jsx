@@ -1,31 +1,9 @@
 import React from 'react';
-import { gql, useQuery } from '@apollo/client';
-
-const GET_DOGS = gql`
-  query {
-    allPeople{
-      
-        pageInfo{
-         hasNextPage,
-         hasPreviousPage
-       }
-      totalCount
-       people {
-        id,
-        name,
-        birthYear,
-        eyeColor,
-        gender,
-        hairColor,
-        height,
-        mass
-        }
-    }
-    }
-`;
+import { useQuery } from '@apollo/client';
+import GET_ALL_PEOPLE from '../API/Query';
 
 const Registry = ({ onDogSelected }) => {
-  const { loading, error, data } = useQuery(GET_DOGS);
+  const { loading, error, data } = useQuery(GET_ALL_PEOPLE);
 
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
