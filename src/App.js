@@ -1,14 +1,20 @@
 import React from 'react';
 // import logo from './logo.svg';
-import NavBar from './Components/NavBar';
-import './App.css';
+import {
+  BrowserRouter as Router, Route, Switch,
+} from 'react-router-dom';
+import Registry from './views/Registry';
+import Details from './views/Details';
+import './App.scss';
+// import { from } from '@apollo/react-hooks';
 
-function App() {
-  return (
-    <main>
-      <NavBar />
-    </main>
-  );
-}
+const App = () => (
+  <Router>
+    <Switch>
+      <Route exact path="/" component={Registry} />
+      <Route exact path="/Details" component={Details} />
+    </Switch>
+  </Router>
+);
 
 export default App;

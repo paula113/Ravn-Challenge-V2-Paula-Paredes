@@ -1,15 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
+import { InMemoryCache, ApolloClient, ApolloProvider } from '@apollo/client';
+// import { ApolloProvider } from '@apollo/react-hooks';
+import NavBar from './Components/NavBar/NavBar';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
+// Pass your GraphQL endpoint to uri
+const client = new ApolloClient({
+  uri: 'https://swapi-graphql.netlify.app/.netlify/functions/index',
+  cache: new InMemoryCache(),
+});
+
+const ApolloApp = () => (
+  <ApolloProvider client={client}>
+    <NavBar />
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </ApolloProvider>
 );
+render(ApolloApp(App), document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

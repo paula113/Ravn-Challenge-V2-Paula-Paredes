@@ -1,3 +1,19 @@
+$baseColor: #e0b61f;
+$baseColor-2: #9d2b16;
+$baseColor-3:#9d5716;
+$baseColor-4:white;
+$loginBtn: #e03e1f;
+$addBtn: #e06f1f;
+$breakpoint-desktop: 768px;
+$title: American Typewriter;
+
+@mixin direccionFlex ($direccion) {
+  display: flex;
+  align-content: space-between;
+  flex-direction: $direccion;
+}
+
+
 /* .nav-app {
   text-align: center;
 }
