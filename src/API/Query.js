@@ -16,6 +16,10 @@ const GET_ALL_PEOPLE = gql`
         hairColor,
         skinColor,
         birthYear,
+        species{
+          name,
+          classification,
+        }
         homeworld{
          name, 
         }

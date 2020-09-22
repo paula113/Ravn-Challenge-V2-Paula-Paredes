@@ -6,13 +6,19 @@ $loginBtn: #e03e1f;
 $addBtn: #e06f1f;
 $breakpoint-desktop: 768px;
 $title: American Typewriter;
+*{
+  margin: 0;
+padding: 0;
+}
 
 @mixin direccionFlex ($direccion) {
   display: flex;
   align-content: space-between;
   flex-direction: $direccion;
 }
-
+.main-board{
+@include direccionFlex(row)
+}
 
 /* .nav-app {
   text-align: center;
