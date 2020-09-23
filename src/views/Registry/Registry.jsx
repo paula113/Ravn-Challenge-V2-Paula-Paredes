@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import AllPeopleRow from '../../Components/AllPeople/AllPeopleRow';
+import Loader from '../../assets/loader.svg';
 import './Registry.scss';
 
 const Registry = ({ loading, data, setAvatar }) => {
@@ -10,7 +11,12 @@ const Registry = ({ loading, data, setAvatar }) => {
   }
   return (
     <section className="registry">
-      {(loading) ? <span>Loading....</span>
+      {(loading) ? (
+        <span className="lodingWrapper">
+          <img src={Loader} alt="Loder" />
+          Loading
+        </span>
+      )
         : people.map((info) => (
           <AllPeopleRow
             key={info.id}
