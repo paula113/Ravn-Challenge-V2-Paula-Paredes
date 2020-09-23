@@ -1,6 +1,5 @@
 @import '../../App.scss';
 
-// @include direccionFlex()
 .registry {
  width: 20%;
  margin-left: 1rem;
@@ -8,4 +7,17 @@
  overflow:scroll;
  max-height: 100vh;
 
+}
+.lodingWrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    padding-left: 30%;
+    color: $TextDark;
+    img {
+      
+       margin-right: 5px;
+    //    margin: 3px;
+    }
 }
