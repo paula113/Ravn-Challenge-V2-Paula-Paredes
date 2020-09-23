@@ -8,7 +8,14 @@ import './App.scss';
 const App = () => {
   const { loading, error, data } = useQuery(GET_ALL_PEOPLE);
   const [avatar, setAvatar] = useState({});
-  if (error) return `Error! ${error.message}`;
+  if (error) {
+    return (
+      <p className="errorMessage">
+        Error!
+        {error.message}
+      </p>
+    );
+  }
 
   return (
     <main className="mainBoard">
