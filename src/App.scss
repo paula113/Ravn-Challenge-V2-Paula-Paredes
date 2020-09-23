@@ -1,18 +1,44 @@
-$baseColor: #e0b61f;
-$baseColor-2: #9d2b16;
-$baseColor-3:#9d5716;
-$baseColor-4:white;
-$loginBtn: #e03e1f;
-$addBtn: #e06f1f;
+$RavenBlack: #121212;
+$TextDark: #333333;
+$TextLight:#828282;
+$TextEnphasis:#EC7557;
+
 $breakpoint-desktop: 768px;
 $title: American Typewriter;
+*{
+  margin: 0;
+  padding: 0;
+}
 
 @mixin direccionFlex ($direccion) {
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
   flex-direction: $direccion;
 }
+@mixin Header {
+  //styleName: Header;
+  font-family: SF Pro Display;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.0125em;
+  text-align: left;
+}
+@mixin Paragraph {
+  //styleName: Paragraph;
+font-family: SF Pro Display;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0.0125em;
+text-align: left;
 
+}
+.mainBoard{
+@include direccionFlex(row)
+}
 
 /* .nav-app {
   text-align: center;

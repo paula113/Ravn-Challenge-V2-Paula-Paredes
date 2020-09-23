@@ -1,25 +1,15 @@
 @import '../../App.scss';
 
-.nav-app {
-    text-align: center;
-  }
-  
+ 
   .nav-app {
-    height: 10vmin;
-    pointer-events: none;
-  }
-  
-  /* @media (prefers-reduced-motion: no-preference) {
-   
-  } */
-  
-  .nav-app {
-    background-color: #282c34;
-    min-height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    background-color: $RavenBlack;
+    height: 3rem;
+    // min-height: 10vh;
+    h2{
+      @include Header;
+      padding: 1rem;
+      font-size: 1rem;
+      color: white;
+    }
+    
   }

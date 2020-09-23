@@ -3,7 +3,7 @@ import './navBar.scss';
 
 const NavBar = () => (
   <nav className="nav-app">
-    <h1>nav Bar</h1>
+    <h2>Ravn Start Wars Registery</h2>
   </nav>
 );
 export default NavBar;
