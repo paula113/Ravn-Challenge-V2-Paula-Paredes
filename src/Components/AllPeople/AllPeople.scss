@@ -3,6 +3,7 @@
 .AllPeopleRow{
     padding: 1rem;
     border-bottom: solid 1px  $TextLight;
+    @include direccionFlex(row);
     h2{
         @include Header;
         color: $RavenBlack;
@@ -10,5 +11,9 @@
     p{
         @include Paragraph;
         color: $TextLight;
+    }
+    .icon{
+        color: $TextLight;
+        height: 1rem;
     }
 }

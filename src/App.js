@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-// import {
-//   BrowserRouter as Router, Route, Switch,
-// } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import GET_ALL_PEOPLE from './API/Query';
 import Registry from './views/Registry/Registry';

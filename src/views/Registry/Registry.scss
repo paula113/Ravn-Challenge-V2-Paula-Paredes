@@ -3,6 +3,9 @@
 // @include direccionFlex()
 .registry {
  width: 20%;
+ margin-left: 1rem;
  border-right: solid 2px  $TextLight;
-//  background-color: aquamarine;
+ overflow:scroll;
+ max-height: 100vh;
+
 }

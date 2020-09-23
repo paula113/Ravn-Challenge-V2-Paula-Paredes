@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// import { useQuery } from '@apollo/client';
-// import GET_ALL_PEOPLE from '../../API/Query';
 import AllPeopleRow from '../../Components/AllPeople/AllPeopleRow';
 import './Registry.scss';
 
