@@ -7,26 +7,20 @@ const Card = (prop) => {
   const {
     array, title,
   } = prop;
-  // const [vehicles, setVehicles] = useState([]);
-  // const [vehicles, setVehicles] = useState([]);
 
-  // console.log(Object.entries(avatar));
-  // if (title === 'General Information') { setData(Object.entries(avatar).slice(3, 7)); }
-  // if (title === 'Vehicles') { setData(Object.entries(avatar.vehicleConnection.vehicles)); }
-  // if (title === 'Vehicles') { console.log((obj)); }
   const seeVehicles = (arr) => {
-    let element = [];
+    // let element = [];
     if (!(typeof arr === 'undefined') && arr.length > 0) {
+      console.log(arr);
       for (let i = 0; i < arr.length; i += 1) {
-        element = arr[i];
+        return (
+          <li>
+            <span className="cardDetailKey">{arr[i].name}</span>
+            <span className="cardDetailValue">{arr[i].vehicleClass}</span>
+          </li>
+        );
       }
     }
-    return (
-      <li>
-        <span className="cardDetailKey">{element.name}</span>
-        <span className="cardDetailValue">{element.vehicleClass}</span>
-      </li>
-    );
     // console.log(arr.length > 0);
     // console.log(obj[1].map(([key, value]) => key));
   };

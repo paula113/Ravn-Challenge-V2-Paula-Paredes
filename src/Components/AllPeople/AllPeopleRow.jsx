@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './AllPeople.scss';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const AllPeopleRow = ({ setAvatar, info, species }) => {
   const {
@@ -10,14 +11,17 @@ const AllPeopleRow = ({ setAvatar, info, species }) => {
 
   return (
     <div className="AllPeopleRow" onClick={() => setAvatar(info)} role="button" tabIndex={0} onKeyPress={() => {}}>
-      <h2>{name}</h2>
-      <p>
-        {species.name ? species.name : 'Human'}
-        {' '}
-        from
-        {' '}
-        {homeworld.name}
-      </p>
+      <div>
+        <h2>{name}</h2>
+        <p>
+          {species.name ? species.name : 'Human'}
+          {' '}
+          from
+          {' '}
+          {homeworld.name}
+        </p>
+      </div>
+      <ArrowForwardIosIcon className="icon" />
     </div>
 
   );
