@@ -23,9 +23,9 @@
     ],
     "rules": {
         "react/jsx-filename-extension": [1, {
-        "extensions": [".js", ".jsx"]},
+        "extensions": [".js", ".jsx"]}
     ],
         "react/require-default-props": [1, { "forbidDefaultForRequired": true, "ignoreFunctionalComponents": false }]
 
-    },
+    }
 }

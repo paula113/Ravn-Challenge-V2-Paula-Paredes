@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.AllPeopleRow{
+    padding: 1rem;
+    border-bottom: solid 1px  $TextLight;
+    h2{
+        @include Header;
+        color: $RavenBlack;
+    }
+    p{
+        @include Paragraph;
+        color: $TextLight;
+    }
+}

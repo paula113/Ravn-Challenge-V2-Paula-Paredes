@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
 import { InMemoryCache, ApolloClient, ApolloProvider } from '@apollo/client';
-import Registry from './views/Registry/Registry';
+// import Registry from './views/Registry/Registry';
 // import { ApolloProvider } from '@apollo/react-hooks';
 import NavBar from './Components/NavBar/NavBar';
 

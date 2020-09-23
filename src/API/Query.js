@@ -18,13 +18,13 @@ const GET_ALL_PEOPLE = gql`
         birthYear,
         species{
           name,
-          classification,
         }
         homeworld{
          name, 
         }
        vehicleConnection{
         vehicles{
+          name,
           vehicleClass
         }
        }
