@@ -4,7 +4,7 @@
 
 ***
 
-This project aims to visualizethe data from the Star Wars GraphQL API [SWAPI.](https://graphql.org/swapi-graphql/)
+This [project](https://ranvn-chellenge-v2-paula-p.herokuapp.com/) aims to visualizethe data from the Star Wars GraphQL API [SWAPI.](https://graphql.org/swapi-graphql/)
 
 ## About this file
 The purpose of this file is to provide overview, setup instructions and background information of the project. 
