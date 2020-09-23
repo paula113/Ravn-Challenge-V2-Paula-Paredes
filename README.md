@@ -7,8 +7,13 @@
 This [project](https://ranvn-chellenge-v2-paula-p.herokuapp.com/) aims to visualizethe data from the Star Wars GraphQL API [SWAPI.](https://graphql.org/swapi-graphql/)
 
 ### Loading Page
+
+![](https://raw.githubusercontent.com/paula113/Ravn-Challenge-V2-Paula-Paredes/master/src/assets/loading.png)
+
 ### Details Page
+![](https://raw.githubusercontent.com/paula113/Ravn-Challenge-V2-Paula-Paredes/master/src/assets/details.png)
 ### Fail to Fetch 
+![](https://raw.githubusercontent.com/paula113/Ravn-Challenge-V2-Paula-Paredes/master/src/assets/failedFetch.png)
 
 ## About this file
 The purpose of this file is to provide overview, setup instructions and background information of the project. 
