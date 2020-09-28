@@ -16,7 +16,6 @@ const App = () => {
       </p>
     );
   }
-
   return (
     <main className="mainBoard">
       <Registry loading={loading} data={data} setAvatar={setAvatar} />

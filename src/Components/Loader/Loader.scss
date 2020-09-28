@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+.lodingWrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    padding-left: 30%;
+    color: $TextDark;
+    img {
+      
+       margin-right: 5px;
+    //    margin: 3px;
+    }
+}

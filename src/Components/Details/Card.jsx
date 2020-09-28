@@ -1,5 +1,6 @@
 // import { element } from 'prop-types';
 import React from 'react';
+import { validateStrings } from '../../HELPERS/validators';
 import './Card.scss';
 
 const Card = (prop) => {
@@ -14,14 +15,14 @@ const Card = (prop) => {
         {(title === 'General Information')
           ? array.map(([key, value]) => (
             <li key={key}>
-              <span className="cardDetailKey">{key}</span>
-              <span className="cardDetailValue">{value}</span>
+              <span className="cardDetailKey">{validateStrings(key)}</span>
+              <span className="cardDetailValue">{validateStrings(value)}</span>
             </li>
           ))
           : array.map((vehicleCard) => (
             <li key={vehicleCard.name}>
-              <span className="cardDetailKey">{vehicleCard.name}</span>
-              <span className="cardDetailValue">{vehicleCard.vehicleClass}</span>
+              <span className="cardDetailKey">{validateStrings(vehicleCard.name)}</span>
+              <span className="cardDetailValue">{validateStrings(vehicleCard.vehicleClass)}</span>
             </li>
           ))}
       </ul>

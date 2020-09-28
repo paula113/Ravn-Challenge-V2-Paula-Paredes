@@ -3,21 +3,16 @@ import React from 'react';
 import AllPeopleRow from '../../Components/AllPeople/AllPeopleRow';
 import Loader from '../../assets/loader.svg';
 import './Registry.scss';
+import Loading from '../../Components/Loader/Loader';
 
 const Registry = ({ loading, data, setAvatar }) => {
-  let people = [];
-  if (data) {
-    people = (Object.entries(data.allPeople)[3][1]).map((e) => e);
-  }
+
   return (
     <section className="registry">
       {(loading) ? (
-        <span className="lodingWrapper">
-          <img src={Loader} alt="Loder" />
-          Loading
-        </span>
+        <Loading Loader={Loader} />
       )
-        : people.map((info) => (
+        : data.allPeople.people.map((info) => (
           <AllPeopleRow
             key={info.id}
             info={info}
